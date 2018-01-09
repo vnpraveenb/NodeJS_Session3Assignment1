@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+    head
+        title Validate Email
+        script(src="validate.js")
+
+    body
+        h1 Validate Email
+        hr
+        br
+        form(method ="post", name="emailValidation", action ="", onsubmit="validateEmail()")
+            label E- mail 
+            input#email(type="email" name="email" placeholder="Your Email") 
+            input#submit(type="submit" value= "Submit") 

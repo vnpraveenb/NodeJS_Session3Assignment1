@@ -1,0 +1,17 @@
+doctype html
+html(lang="en", charset="utf-8")
+    head
+        title Handling events
+        script(src="eventHandler.js")
+    
+    body
+        h1 Handling Events
+        hr
+        br
+
+        -listItems=["Core Javscript", "jQuery","ES6", "Node.js","HTML","CSS","Jade","HTML5"]
+        ul#unorderedList
+            each item in listItems
+                li= item
+            
+        input#button(type="button", value="Delete Odd Items" onclick="deleteOddItems()")
